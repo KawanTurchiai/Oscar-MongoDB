@@ -1,5 +1,6 @@
 # Oscar-MongoDB
 Atividades para trabalhar com o Oscar
+
 1- Quantas vezes Natalie Portman foi indicada ao Oscar?
 
 2- Quantos Oscars Natalie Portman ganhou?
