@@ -11,16 +11,16 @@ Atividades para trabalhar com o Oscar
 > db.registros.countDocuments({nome_do_indicado: "Amy Adams", vencedor: "true"})
 
 4- A série de filmes Toy Story ganhou um Oscar em quais anos? 2 premios em 2011 para o filme "Toy Story 3" e 1 em 2020 para o filme "Toy Story 4"
->db.registros.find({nome_do_filme: /Toy Story/i, vencedor: "true"}, {ano_cerimonia: 1,nome_do_filme: 1, vencedor: 1})
+> db.registros.find({nome_do_filme: /Toy Story/i, vencedor: "true"}, {ano_cerimonia: 1,nome_do_filme: 1, vencedor: 1})
 
 5- A partir de que ano que a categoria "Actress" deixa de existir? A partir de 1931
-db.registros.find({categoria: /Actress/i}, {categoria: 1, ano_cerimonia: 1})
+> db.registros.find({categoria: /Actress/i}, {categoria: 1, ano_cerimonia: 1})
 
 6- O primeiro Oscar para melhor Atriz foi para quem? Em que ano? Foi Janet Gaynor no ano de 1928
->db.registros.find({categoria: "ACTRESS", vencedor: "true"}).sort({ano_filmagem: 1}).limit(1)
+> db.registros.find({categoria: "ACTRESS", vencedor: "true"}).sort({ano_filmagem: 1}).limit(1)
 
 7- Na campo "Vencedor", altere todos os valores com "Sim" para 1 e todos os valores "Não" para 0.
->db.registros.updateMany({vencedor: "true", vencedor: "false"}, {$set: {vencedor: 1, vencedor: 0}})
+> db.registros.updateMany({vencedor: "true", vencedor: "false"}, {$set: {vencedor: 1, vencedor: 0}})
 
 8- Em qual edição do Oscar "Crash" concorreu ao Oscar?
 
