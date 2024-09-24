@@ -20,6 +20,7 @@ db.registros.find({categoria: /Actress/i}, {categoria: 1, ano_cerimonia: 1})
 >db.registros.find({categoria: "ACTRESS", vencedor: "true"}).sort({ano_filmagem: 1}).limit(1)
 
 7- Na campo "Vencedor", altere todos os valores com "Sim" para 1 e todos os valores "Não" para 0.
+>db.registros.updateMany({vencedor: "true", vencedor: "false"}, {$set: {vencedor: 1, vencedor: 0}})
 
 8- Em qual edição do Oscar "Crash" concorreu ao Oscar?
 
