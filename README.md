@@ -27,9 +27,10 @@ Atividades para trabalhar com o Oscar
 > db.registros.find ({nome_do_filme: "Crash"}, {nome_do_filme: 1, cerimonia: 1, _id:0})
 
 9- Bom... dê um Oscar para um filme que merece muito, mas não ganhou. ```Escolhi o filme "The Pursuit of Happyness".```
->db.registros.updateOne({nome_do_filme: /The Pursuit of Happyness/i, vencedor: 0}, {$set:{vencedor: 1}})
+> db.registros.updateOne({nome_do_filme: /The Pursuit of Happyness/i, vencedor: 0}, {$set:{vencedor: 1}})
 
-10- O filme Central do Brasil aparece no Oscar?
+10- O filme Central do Brasil aparece no Oscar? ```O filme "Central do Brasil" não aparece no BD```
+> db.registros.countDocuments ({nome_do_filme: /Central do Brasil/i})
 
 11- Inclua no banco 3 filmes que nunca foram nem nomeados ao Oscar, mas que merecem ser. 
 
