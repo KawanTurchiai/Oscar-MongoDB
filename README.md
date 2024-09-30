@@ -1,7 +1,8 @@
 # Oscar-MongoDB
 Atividades para trabalhar com o Oscar
 
-1- Quantas vezes Natalie Portman foi indicada ao Oscar? 3 vezes
+1- Quantas vezes Natalie Portman foi indicada ao Oscar? 
+>3 vezes<
 > db.registros.countDocuments({nome_do_indicado: "Natalie Portman"})
 
 2- Quantos Oscars Natalie Portman ganhou? 1 vez
@@ -22,7 +23,8 @@ Atividades para trabalhar com o Oscar
 7- Na campo "Vencedor", altere todos os valores com "Sim" para 1 e todos os valores "Não" para 0.
 > db.registros.updateMany({vencedor: "true", vencedor: "false"}, {$set: {vencedor: 1, vencedor: 0}})
 
-8- Em qual edição do Oscar "Crash" concorreu ao Oscar?
+8- Em qual edição do Oscar "Crash" concorreu ao Oscar? Concorreu 5 vezes na 78.ª edição do Oscar.
+> db.registros.find ({nome_do_filme: "Crash"}, {nome_do_filme: 1, cerimonia: 1, _id:0})
 
 9- Bom... dê um Oscar para um filme que merece muito, mas não ganhou.
 
