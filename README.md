@@ -33,6 +33,8 @@ Atividades para trabalhar com o Oscar
 > db.registros.countDocuments ({nome_do_filme: /Central do Brasil/i})
 
 11- Inclua no banco 3 filmes que nunca foram nem nomeados ao Oscar, mas que merecem ser. 
+
+```
 > db.registros.insertMany (
 [{id_registro: 20001,
   ano_filmagem: 2014,
@@ -59,5 +61,6 @@ Atividades para trabalhar com o Oscar
   nome_do_filme: 'Cidade de Deus',
   vencedor: 0}
 ])
+```
 
 14 - Pensando no ano em que você nasceu: Qual foi o Oscar de melhor filme, Melhor Atriz e Melhor Diretor?
