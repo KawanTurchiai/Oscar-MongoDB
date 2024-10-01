@@ -33,5 +33,34 @@ Atividades para trabalhar com o Oscar
 > db.registros.countDocuments ({nome_do_filme: /Central do Brasil/i})
 
 11- Inclua no banco 3 filmes que nunca foram nem nomeados ao Oscar, mas que merecem ser. 
+> db.registros.insertMany (
+[{id_registro: 20001,
+  ano_filmagem: 2014,
+  ano_cerimonia: 2015,
+  cerimonia: 86,
+  categoria: 'DIRECTING',
+  nome_do_indicado: 'Baran bo Odar',
+  nome_do_filme: 'Who Am I: Kein System ist sicher',
+  vencedor: 0},
+
+ {id_registro: 20002,
+  ano_filmagem: 1999,
+  ano_cerimonia: 2000,
+  cerimonia: 72,
+  categoria: 'ACTOR',
+  nome_do_indicado: 'Edward Norton',
+  nome_do_filme: 'Fight Club',
+  vencedor: 0},
+
+ {id_registro: 20003,
+  ano_filmagem: 2002,
+  ano_cerimonia: 2004,
+  cerimonia: 75,
+  categoria: 'DIRECTING',
+  nome_do_indicado: 'Kátia Lund, Fernando Meirelles, Alexandre Rodrigues',
+  nome_do_filme: 'Cidade de Deus',
+  vencedor: 0}
+
+])
 
 14 - Pensando no ano em que você nasceu: Qual foi o Oscar de melhor filme, Melhor Atriz e Melhor Diretor?
