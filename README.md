@@ -82,4 +82,20 @@ Atividades para trabalhar com o Oscar
 ])
 ```
 
-14 - Pensando no ano em que você nasceu: Qual foi o Oscar de melhor filme, Melhor Atriz e Melhor Diretor?
+12 - Pensando no ano em que você nasceu: Qual foi o Oscar de melhor filme, Melhor Atriz e Melhor Diretor?
+```
+> db.registros.find (
+{ano_cerimonia: 2005,
+ categoria: /Best Picture/i,
+ vencedor: 1})
+
+> db.registros.find (
+{ano_cerimonia: 2005,
+ categoria: /Actor/i,
+ vencedor: 1})
+
+> db.registros.find (
+{ano_cerimonia: 2005,
+ categoria: /Actress/i,
+ vencedor: 1})
+```
